@@ -16,18 +16,6 @@ button:focus{
     background: #aa6a4d !important;
 }
 
-@media screen and (min-width:1024px){
-    input{
-        width: 60% !important;
-        display: flex;
-        padding: 10px;
-        border: 1px white;
-        background: rgba(255, 255, 255, 0.048);
-        border: 2px solid #f3976c44;
-        transition: all 0.2s ease;
-    }    
-}
-
 input{
     width: 100%;
     display: flex;
@@ -45,7 +33,7 @@ input:focus{
 }
 
 ::placeholder{
-    color:#f3976c96;
+    color:#f3976ce1;
     font-weight: 600;
 }
 
@@ -624,6 +612,10 @@ button {
     text-shadow:  0px 0px 3px rgba(0, 0, 0, 0.425);
 }
 
+.sendBtn > button:focus{
+    border: 2px inset rgba(8, 8, 8, 0.541)
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -786,29 +778,6 @@ a {
 .blockquote{
     font-style: italic;
     font-size: 20px;
-    font-weight: bold;
-}
-
-.contactUs{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    color: white !important;
-    height: 100%;
-}
-
-.subContact{
-    position: relative;
-    width: 250px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    left: 65%;
-    top: 15%;
-}
-
-.subContact p{
-    color: white !important;
 }
 
 .info{
@@ -869,11 +838,11 @@ p {
 
 .social {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
 }
 
 h2 {
@@ -918,8 +887,23 @@ h4 {
     font-weight: bold;
 }
 
+.subContact{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.subContact p{
+    margin: 0;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    color: #222222 !important;
+    font-weight: bold
+}
+
 .white-footer{
-    color: #000000 !important;
+    color: #222222 !important;
+    font-weight: bold;
 }
 
 .portfolio-thumb {
@@ -1044,7 +1028,7 @@ textarea:focus::placeholder{
     background-image: url("img/image-de-presentation.webp");
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -1058,18 +1042,15 @@ textarea:focus::placeholder{
     }
     .subContact{
         display: flex;
-        justify-content: center;
-        flex-direction: row;
-        width: 100%;
-        white-space: nowrap;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        top: 85%;
+        flex-direction: column;
     }
     .subContact p{
         margin: 0;
         padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        color: black !important;
+        font-weight: 400;
     }
 }
 
